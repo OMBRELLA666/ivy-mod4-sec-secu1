@@ -1,0 +1,61 @@
+Symmetric & Asymmetric Encryption Demo
+
+This project demonstrates the difference between symmetric and asymmetric encryption using Python. The script allows the user to enter a short message, then shows how that message can be encrypted and decrypted using both methods.
+
+How the Code Works
+1. User Input
+
+The program asks the user to enter any short message.
+This message is converted into bytes so it can be encrypted.
+
+2. Symmetric Encryption (Fernet / AES-based)
+
+A single secret key is generated.
+
+The message is encrypted using this key.
+
+The same key is then used to decrypt the ciphertext.
+
+Output shown to the user:
+
+Symmetric key
+
+Encrypted text
+
+Decrypted text
+
+This demonstrates how symmetric encryption uses one shared key for both operations.
+
+3. Asymmetric Encryption (RSA)
+
+The program generates an RSA key pair:
+
+Public key (used for encryption)
+
+Private key (used for decryption)
+
+The message is encrypted using the public key.
+
+It is decrypted using the private key.
+
+Output shown:
+
+Public key
+
+Private key
+
+Encrypted text
+
+Decrypted text
+
+This demonstrates how asymmetric encryption uses two different keys and avoids sharing a secret key.
+
+4. Purpose / Learning Outcome
+
+This project fulfills Outcome 2.1 by showing:
+
+How symmetric and asymmetric encryption work.
+
+The strengths and weaknesses of each approach.
+
+Why real-world systems often combine both methods.
